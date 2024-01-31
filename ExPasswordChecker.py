@@ -16,10 +16,3 @@ def check_password():
         print("That is not a valid password")
 
 check_password()
-
-
-### Andrei's method (he adds the specific characters and the length of the password in regex and creates it like that)
-pattern2 = re.compile(r"[a-zA-Z0-9$%#@]{8,}\d")
-password2 = "hjdgas"
-check = pattern2.fullmatch(password2)
-print(check)
